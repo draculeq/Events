@@ -1,0 +1,15 @@
+{
+    "name": "Events",
+    "references": [
+        "GUID:a314a80aa24eb8d46b56280203137e3b"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
