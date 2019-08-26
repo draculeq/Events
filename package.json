@@ -6,7 +6,7 @@
   "unity": "2019.1",
   "unityRelease": "0f1",
   "dependencies": {
-  "com.deadbit.utils"
+  "com.deadbit.utils" : "https://github.com/draculeq/Utilities.git"
  },
  "keywords": [
     "deadbit",
