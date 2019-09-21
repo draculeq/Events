@@ -15,6 +15,7 @@ namespace Deadbit.Events
     [Serializable] public class ColorEvent : UnityEvent<UnityEngine.Color> { }
     [Serializable] public class SpriteEvent : UnityEvent<UnityEngine.Sprite> { }
     [Serializable] public class ImageEvent : UnityEvent<UnityEngine.UI.Image> { }
+    [Serializable] public class Texture2D : UnityEvent<Texture2D> { }
     [Serializable] public class GameObjectEvent : UnityEvent<GameObject> { }
     [Serializable] public class ColliderEvent : UnityEvent<Collider> { }
 }
