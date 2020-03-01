@@ -1,4 +1,4 @@
-﻿namespace Deadbit.Events.Generic
+﻿namespace Deadbit.Events
 {
     public interface IGenericEventListener<T>
     {

@@ -1,7 +1,6 @@
-﻿using Deadbit.Events.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Deadbit.Events.Float
+namespace Deadbit.Events
 {
     [CreateAssetMenu(menuName = "Deadbit/Events/Float Event Invoker", fileName = "FloatEventInvoker")]
     public class FloatEventInvokerAsset : GenericEventInvoker<float, FloatEvent> { }

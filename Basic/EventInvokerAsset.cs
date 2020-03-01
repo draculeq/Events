@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Deadbit.Events.Basic
+namespace Deadbit.Events
 {
     [CreateAssetMenu(menuName = "Deadbit/Events/Event Invoker", fileName = "Event Invoker")]
     public class EventInvokerAsset : SerializedScriptableObject, IEvent
@@ -12,8 +12,8 @@ namespace Deadbit.Events.Basic
         [BoxGroup("Status"), ShowInInspector]
         private readonly List<IEventListener> listeners = new List<IEventListener>();
 
-        [BoxGroup("Event")] public UnityEvent EventRaised;
-        [BoxGroup("Event")] public UnityEvent BeforeEventRaised;
+        [BoxGroup("Event")] public UnityEvent eventRaised;
+        [BoxGroup("Event")] public UnityEvent beforeEventRaised;
 
         private bool raising = false;
         private readonly List<IEventListener> listenersToRemoveDuringRaising = new List<IEventListener>();
@@ -27,7 +27,7 @@ namespace Deadbit.Events.Basic
         {
             if (logInvoke) Debug.LogFormat($"Event {name} Raised, with {listeners.Count} listeners active ", this);
 
-            BeforeEventRaised.Invoke();
+            beforeEventRaised.Invoke();
 
             raising = true;
 
@@ -46,7 +46,7 @@ namespace Deadbit.Events.Basic
                 }
                 listenersToRemoveDuringRaising.Clear();
             }
-            EventRaised.Invoke();
+            eventRaised.Invoke();
         }
 
         public void RegisterListener(IEventListener listener)

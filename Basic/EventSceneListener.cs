@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Deadbit.Events.Basic
+namespace Deadbit.Events
 {
     public class EventSceneListener : SerializedMonoBehaviour, IEventListener
     {

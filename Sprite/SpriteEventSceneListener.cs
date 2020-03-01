@@ -1,6 +1,4 @@
-﻿using Deadbit.Events.Generic;
-
-namespace Deadbit.Events.Sprite
+﻿namespace Deadbit.Events
 {
     public class SpriteEventSceneListener : GenericEventSceneListener<UnityEngine.Sprite, SpriteEvent> { }
 }

@@ -1,6 +1,4 @@
-﻿using Deadbit.Events.Generic;
-
-namespace Deadbit.Events.Color
+﻿namespace Deadbit.Events
 {
     public class ColorEventSceneListener : GenericEventSceneListener<UnityEngine.Color, ColorEvent> { }
 }

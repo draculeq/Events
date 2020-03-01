@@ -1,6 +1,4 @@
-﻿using Deadbit.Events.Generic;
-
-namespace Deadbit.Events.Bool
+﻿namespace Deadbit.Events
 {
     public class BoolEventSceneListener : GenericEventSceneListener<bool, BoolEvent> { }
 }

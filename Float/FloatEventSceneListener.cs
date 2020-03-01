@@ -1,6 +1,4 @@
-﻿using Deadbit.Events.Generic;
-
-namespace Deadbit.Events.Float
+﻿namespace Deadbit.Events
 {
     public class FloatEventSceneListener : GenericEventSceneListener<float, FloatEvent> { }
 }

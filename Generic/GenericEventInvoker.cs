@@ -3,7 +3,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Deadbit.Events.Generic
+namespace Deadbit.Events
 {
     public abstract class GenericEventInvoker<T, TEvent> : SerializedScriptableObject, IGenericEvent<T> where TEvent : UnityEvent<T>
     {

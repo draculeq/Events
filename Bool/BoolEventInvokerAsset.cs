@@ -1,7 +1,6 @@
-﻿using Deadbit.Events.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Deadbit.Events.Bool
+namespace Deadbit.Events
 {
     [CreateAssetMenu(menuName = "Deadbit/Events/Bool Event Invoker", fileName = "BoolEventInvoker")]
     public class BoolEventInvokerAsset : GenericEventInvoker<bool, BoolEvent> { }

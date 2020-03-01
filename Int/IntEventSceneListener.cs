@@ -1,6 +1,4 @@
-﻿using Deadbit.Events.Generic;
-
-namespace Deadbit.Events.Int
+﻿namespace Deadbit.Events
 {
     public class IntEventSceneListener : GenericEventSceneListener<int, IntEvent> { }
 }
