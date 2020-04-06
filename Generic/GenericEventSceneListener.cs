@@ -25,7 +25,7 @@ namespace Deadbit.Events
             Event.UnRegisterListener(this);
         }
 
-        protected bool MeetCustomRaiseConditions()
+        protected virtual bool MeetCustomRaiseConditions()
         {
             return true;
         }
