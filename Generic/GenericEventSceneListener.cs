@@ -32,7 +32,7 @@ namespace Deadbit.Events
 
         public void OnEventRaised(T param)
         {
-            if (!enabled && !MeetCustomRaiseConditions(param))
+            if (!enabled || !MeetCustomRaiseConditions(param))
                 return;
 
             if (logRaise) Debug.LogFormat(this, "Event Response receive on {0}", name);
