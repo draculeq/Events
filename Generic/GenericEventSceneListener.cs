@@ -25,9 +25,14 @@ namespace Deadbit.Events
             Event.UnRegisterListener(this);
         }
 
+        protected bool MeetCustomRaiseConditions()
+        {
+            return true;
+        }
+
         public void OnEventRaised(T param)
         {
-            if (!enabled)
+            if (!enabled && !MeetCustomRaiseConditions())
                 return;
 
             if (logRaise) Debug.LogFormat(this, "Event Response receive on {0}", name);
